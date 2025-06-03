@@ -5,7 +5,7 @@ Step 1 :
 minicom -b 115200 -o -D /dev/ttyACM0
 Step 2 : 
 git clone https://github.com/ramisettyranganadh/PROJECT-BRT.git
-Step 3 :
+Step 3 : (OPTIONAL)
 make distclean
 Step 4 :
 make list-defconfigs
@@ -13,13 +13,12 @@ Step 5 :
 make beaglebone_defconfig
 Step 6 : (OPTIONAL)
 make menuconfig
+Step 7 : 
+make clean; make;
 
-1. make list-defconfigs;
-2. make beaglebone_defconfig;
-# 3. make DEVICE_TREE=am335x-boneblack;
-# 4. export ARCH=arm;
-# 5. export CROSS_COMPILE=arm-linux-gnueabihf-;
-# 6. make distclean;
+# export ARCH=arm;
+# export CROSS_COMPILE=arm-linux-gnueabihf-;
+# make DEVICE_TREE=am335x-boneblack;
 
 --------------------------------------------------------------------------
 

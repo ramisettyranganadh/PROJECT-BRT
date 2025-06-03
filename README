@@ -4,7 +4,15 @@
 Step 1 : 
 minicom -b 115200 -o -D /dev/ttyACM0
 Step 2 : 
-git clone 
+git clone https://github.com/ramisettyranganadh/PROJECT-BRT.git
+Step 3 :
+make distclean
+Step 4 :
+make list-defconfigs
+Step 5 :
+make beaglebone_defconfig
+Step 6 : (OPTIONAL)
+make menuconfig
 
 1. make list-defconfigs;
 2. make beaglebone_defconfig;

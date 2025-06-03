@@ -1,4 +1,4 @@
-                            BUILDROOT:
+                        BUILDROOT INITIALIZATION:
 --------------------------------------------------------------------------
 
 Step 1 : 
@@ -6,7 +6,7 @@ minicom -b 115200 -o -D /dev/ttyACM0
 Step 2 : 
 git clone https://github.com/ramisettyranganadh/PROJECT-BRT.git
 Step 3 : (OPTIONAL)
-make distclean
+make distclean; make clean; 
 Step 4 :
 make list-defconfigs
 Step 5 :
@@ -14,7 +14,7 @@ make beaglebone_defconfig
 Step 6 : (OPTIONAL)
 make menuconfig
 Step 7 : 
-make clean; make;
+make
 
 # export ARCH=arm;
 # export CROSS_COMPILE=arm-linux-gnueabihf-;
